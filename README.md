@@ -6,6 +6,6 @@
 ==阿里云盘>资源盘存有下载文件==
 **使用方法**
 1. 电脑端和手机端安装程序（点击允许搜索局域网上的设备）
-2、[123](https://github.com/cooperpy/tool_cabinet/assets/107781344/7c8e9e31-0656-44ed-8b91-e01bc620cbd6)
+2、[操作图](https://github.com/cooperpy/tool_cabinet/assets/107781344/7c8e9e31-0656-44ed-8b91-e01bc620cbd6)
 
 
