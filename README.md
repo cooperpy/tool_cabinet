@@ -1,3 +1,18 @@
+- [电脑常用安装工具](#电脑常用安装工具)
+  - [1、PC电脑和手机之间互传文件——LANDrop](#1pc电脑和手机之间互传文件landrop)
+  - [MARKDOWN编辑器——Marktext](#markdown编辑器marktext)
+  - [PDF阅读器——Koodo Reader](#pdf阅读器koodo-reader)
+  - [音乐播放器——MusicPlayer2](#音乐播放器musicplayer2)
+  - [视频播放器——PotPlayer](#视频播放器potplayer)
+  - [思维导图——Xmind](#思维导图xmind)
+  - [万兴音视频格式转换](#万兴音视频格式转换)
+- [各类包的安装方法](#各类包的安装方法)
+  - [git升级或编译](#git升级或编译)
+    - [编译安装- 电脑常用安装工具](#编译安装--电脑常用安装工具)
+    - [在线安装](#在线安装)
+- [git version 1.8.3.1](#git-version-1831)
+- [git version 2.34.1](#git-version-2341)
+
 # 电脑常用安装工具
 ## 1、PC电脑和手机之间互传文件——LANDrop
 [LANDrop的GitHub网址](https://github.com/LANDrop/LANDrop)
@@ -25,21 +40,6 @@
 # 各类包的安装方法
 ## git升级或编译
 ### 编译安装- [电脑常用安装工具](#电脑常用安装工具)
-- [电脑常用安装工具](#电脑常用安装工具)
-  - [1、PC电脑和手机之间互传文件——LANDrop](#1pc电脑和手机之间互传文件landrop)
-  - [MARKDOWN编辑器——Marktext](#markdown编辑器marktext)
-  - [PDF阅读器——Koodo Reader](#pdf阅读器koodo-reader)
-  - [音乐播放器——MusicPlayer2](#音乐播放器musicplayer2)
-  - [视频播放器——PotPlayer](#视频播放器potplayer)
-  - [思维导图——Xmind](#思维导图xmind)
-  - [万兴音视频格式转换](#万兴音视频格式转换)
-- [各类包的安装方法](#各类包的安装方法)
-  - [git升级或编译](#git升级或编译)
-    - [编译安装- 电脑常用安装工具](#编译安装--电脑常用安装工具)
-    - [在线安装](#在线安装)
-- [git version 1.8.3.1](#git-version-1831)
-- [git version 2.34.1](#git-version-2341)
-
 ```bash
 # 需要 root 权限
 # 安装依赖
