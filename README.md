@@ -10,8 +10,6 @@
   - [git升级或编译](#git升级或编译)
     - [编译安装- 电脑常用安装工具](#编译安装--电脑常用安装工具)
     - [在线安装](#在线安装)
-- [git version 1.8.3.1](#git-version-1831)
-- [git version 2.34.1](#git-version-2341)
 
 # 电脑常用安装工具
 ## 1、PC电脑和手机之间互传文件——LANDrop
@@ -67,12 +65,12 @@ git version 2.8.5
 ### 在线安装
 ```bash
 git --version
-# git version 1.8.3.1
+[git version 1.8.3.1]
 
 sudo yum remove git
 sudo yum remove git-*
 sudo yum install https://packages.endpointdev.com/rhel/7/os/x86_64/endpoint-repo.x86_64.rpm
 sudo yum install git
 git --version
-# git version 2.34.1
+[git version 2.34.1]
 
