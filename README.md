@@ -23,3 +23,30 @@
 ==阿里云盘>资源盘存有下载文件==
 ## 万兴音视频格式转换
 ==阿里云盘>资源盘存有下载文件==
+# 安装各类包的方法
+## git升级或编译
+## 编译安装
+```bash
+# 需要 root 权限
+# 安装依赖
+sudo yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
+sudo yum install gcc perl-ExtUtils-MakeMaker
+sudo yum -y install wget
+
+# 进入下载文件保存目录，根据实际情况替换
+cd ~/downloads
+wget https://github.com/git/git/archive/v2.34.1.tar.gz
+
+tar -xvf v2.34.1.tar.gz
+rm -f v2.34.1.tar.gz
+cd git-2.34.1
+
+make configure
+sudo ./configure --prefix=/usr
+sudo make
+sudo make install
+
+git --version
+git version 2.34.1
+
+```
