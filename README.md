@@ -25,7 +25,7 @@
 ==阿里云盘>资源盘存有下载文件==
 # 安装各类包的方法
 ## git升级或编译
-## 编译安装
+### 编译安装
 ```bash
 # 需要 root 权限
 # 安装依赖
@@ -35,11 +35,11 @@ sudo yum -y install wget
 
 # 进入下载文件保存目录，根据实际情况替换
 cd ~/downloads
-wget https://github.com/git/git/archive/v2.34.1.tar.gz
+wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.8.5.tar.gz  (==阿里云盘>资源盘存有下载文件==)
 
-tar -xvf v2.34.1.tar.gz
-rm -f v2.34.1.tar.gz
-cd git-2.34.1
+tar -xvf git-2.8.5.tar.gz
+rm -f git-2.8.5.tar.gz
+cd git-2.8.5
 
 make configure
 sudo ./configure --prefix=/usr
@@ -47,6 +47,18 @@ sudo make
 sudo make install
 
 git --version
-git version 2.34.1
+git version 2.8.5
 
 ```
+### 在线安装
+```bash
+git --version
+# git version 1.8.3.1
+
+sudo yum remove git
+sudo yum remove git-*
+sudo yum install https://packages.endpointdev.com/rhel/7/os/x86_64/endpoint-repo.x86_64.rpm
+sudo yum install git
+git --version
+# git version 2.34.1
+
