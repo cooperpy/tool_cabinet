@@ -13,6 +13,9 @@
 - [centos内更新SQLite的版本解决版本过低导致的BUG](#centos内更新sqlite的版本解决版本过低导致的bug)
   - [提前准备](#提前准备)
   - [开始安装](#开始安装-1)
+- [git升级或编译](#git升级或编译)
+  - [编译安装- 电脑常用安装工具](#编译安装--电脑常用安装工具)
+  - [在线安装](#在线安装)
 
 
 # 1、电脑安装CentOS系统（相关工具在阿里云盘资源盘都有保存）
@@ -266,3 +269,41 @@ sqlite3 --version
 python3 -c "import sqlite3; print(sqlite3.sqlite_version)"
 ```
 升级完成，即可解决上述BUG
+
+# git升级或编译
+## 编译安装- [电脑常用安装工具](#电脑常用安装工具)
+```bash
+# 需要 root 权限
+# 安装依赖
+sudo yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
+sudo yum install gcc perl-ExtUtils-MakeMaker
+sudo yum -y install wget
+
+# 进入下载文件保存目录，根据实际情况替换
+cd ~/downloads
+wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.8.5.tar.gz  (==阿里云盘>资源盘存有下载文件==)
+
+tar -xvf git-2.8.5.tar.gz
+rm -f git-2.8.5.tar.gz
+cd git-2.8.5
+
+make configure
+sudo ./configure --prefix=/usr
+sudo make
+sudo make install
+
+git --version
+git version 2.8.5
+
+```
+## 在线安装
+```bash
+git --version
+[git version 1.8.3.1]
+
+sudo yum remove git
+sudo yum remove git-*
+sudo yum install https://packages.endpointdev.com/rhel/7/os/x86_64/endpoint-repo.x86_64.rpm
+sudo yum install git
+git --version
+[git version 2.34.1]
