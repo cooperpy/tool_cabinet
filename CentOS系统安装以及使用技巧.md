@@ -122,6 +122,7 @@ EOF
 ```bash
 yum install libffi-devel -y
 yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
+sudo yum install autoconf -y
 
 ```
 ---
